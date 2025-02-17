@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote name="aosp" fetch="https://android.googlesource.com" review="https://android-review.googlesource.com/"/>
+  <remote name="github" fetch="https://github.com/L0czek/" />
   
   <default remote="aosp" revision="refs/tags/android-15.0.0_r17" sync-j="4"/>
   
@@ -1172,7 +1173,7 @@
   <project name="platform/packages/modules/ThreadNetwork" path="packages/modules/ThreadNetwork" revision="d8140229156771652b3ccd32c57d8b61bd14f77d" upstream="refs/tags/android-15.0.0_r17" dest-branch="refs/tags/android-15.0.0_r17" groups="pdk-cw-fs,pdk-fs"/>
   <project name="platform/packages/modules/UprobeStats" path="packages/modules/UprobeStats" revision="44240bd657e05524cd78c107870023b26958436b" upstream="refs/tags/android-15.0.0_r17" dest-branch="refs/tags/android-15.0.0_r17" groups="pdk-cw-fs,pdk-fs"/>
   <project name="platform/packages/modules/Uwb" path="packages/modules/Uwb" revision="36fc0a45d8ac5c0fa434a79b7a84a4dae4050a09" upstream="refs/tags/android-15.0.0_r17" dest-branch="refs/tags/android-15.0.0_r17" groups="pdk-cw-fs,pdk-fs"/>
-  <project name="platform/packages/modules/Virtualization" path="packages/modules/Virtualization" revision="a435bfa0ea482e240d7d05d5f459e8304db149b2" upstream="refs/tags/android-15.0.0_r17" dest-branch="refs/tags/android-15.0.0_r17" groups="pdk"/>
+  <project name="aosp-virt-package" remote="github" path="packages/modules/Virtualization" revision="master" groups="pdk"/>
   <project name="platform/packages/modules/Wifi" path="packages/modules/Wifi" revision="9793c5fe7feb5fd8aa32e8f457308428373c0bfd" upstream="refs/tags/android-15.0.0_r17" dest-branch="refs/tags/android-15.0.0_r17" groups="pdk-cw-fs,pdk-fs,sysui-studio"/>
   <project name="platform/packages/modules/adb" path="packages/modules/adb" revision="d7502dd8a2bbf37ed4290aac7445c7fa3cb6f482" upstream="refs/tags/android-15.0.0_r17" dest-branch="refs/tags/android-15.0.0_r17" groups="pdk"/>
   <project name="platform/packages/modules/common" path="packages/modules/common" revision="910fc4b0a7282c6fcdfd4fc971149e7f685b361c" upstream="refs/tags/android-15.0.0_r17" dest-branch="refs/tags/android-15.0.0_r17" groups="pdk-cw-fs,pdk-fs"/>
